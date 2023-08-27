@@ -1,0 +1,143 @@
+/* @font-face {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    src: url(../fonts/static/BricolageGrotesque-ExtraBold.ttf);
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 11px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    width: 100vw;
+}
+
+body {
+    background: #1a1b1b;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    width: 83%;
+    margin-left: 10%;
+    font-size: 2.5rem;
+    box-shadow: -6px -6px 10px cornflowerblue, 11px 11px 5px #FFDAB9;
+    padding: 22px;
+    display: block;
+    border-radius: 3px;
+    color: #5e60d7c9;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: #b090bc 0px 1px 1px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    padding-left: 15px;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h2, h4 {
+    color: aliceblue;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+form {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: max-content;
+    padding: 5px;
+    color: cyan;
+}
+
+select {
+    width: 65%;
+    text-align: center;
+    transition: all ease-in-out 1s;
+}
+
+option {
+    background-color: aqua;
+    text-align: center;
+}
+
+option:focus {
+    border: 1px solid #333;
+    background-color: aqua;
+}
+
+select, input[type="submit"] {
+    padding: 7px;
+    margin: 10px;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling for section wrapping form and h4  */
+.user-choice-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.random-movie-set {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 76%;
+    background-color: #f0f8ff21; /* temp styling to see layout */ 
+    border-radius: 4px 47px 4px 47px; /* may need adjustment on larger screens */
+}
+
+.movie-pic-small {
+    width: 99%;
+    height: 181px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.single-film-wrapper {
+    border-radius: 4px;
+    background-color: #f0f8ff21;
+    padding: 3%;
+    width: 48%;
+    margin: 3px;
+    max-height: max-content;
+}
+
+.single-film-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-year {
+    font-size: 1.3rem;
+}
+
+
+/* see through greey background color */

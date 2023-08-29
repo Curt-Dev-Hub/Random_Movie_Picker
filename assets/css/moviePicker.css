@@ -12,26 +12,28 @@ html {
     font-size: 11px;
     font-family: 'Bricolage Grotesque', sans-serif;
     width: 100vw;
+    transition: all ease-in-out 0.2s;
 }
 
 body {
-    background: #1a1b1b;
+    background: linear-gradient(90deg, rgba(241,230,230,0.8477590865447742) 32%, rgba(26,153,244,0.6376750529313288) 95%);
+    /* background: radial-gradient(circle, rgba(241,230,230,0.8477590865447742) 32%, rgba(26,153,244,0.6376750529313288) 95%); */
     width: 100%;
+    color: #102E4A;
 }
 
 h1 {
+    color:#185685;
     font-weight: 800;
     width: 83%;
     margin-left: 10%;
-    font-size: 2.5rem;
-    box-shadow: -6px -6px 10px cornflowerblue, 11px 11px 5px #FFDAB9;
+    font-size: 4rem;
     padding: 22px;
-    display: block;
     border-radius: 3px;
-    color: #5e60d7c9;
     text-align: center;
-    letter-spacing: 3px;
-    text-shadow: #b090bc 0px 1px 1px;
+    letter-spacing: 9px;
+    text-shadow:0px 0px 0 rgb(0,62,109),-1px -1px 0 rgb(-15,47,94),-2px -2px 0 rgb(-29,33,80),-3px -3px 0 rgb(-44,18,65),-4px -4px 0 rgb(-58,4,51),-5px -5px 0 rgb(-73,-11,36), -6px -6px 0 rgb(-87,-25,22),-7px -7px 6px rgba(0,0,0,0.6),-7px -7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+    align-self: center;
 }
 
 h2 {
@@ -44,13 +46,10 @@ h4 {
     font-size: 1.5rem;
 }
 
-h2, h4 {
-    color: aliceblue;
-}
-
 h5 {
     font-size: 1.5rem;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 form {
@@ -60,8 +59,7 @@ form {
     align-items: center;
     justify-content: space-around;
     height: max-content;
-    padding: 5px;
-    color: cyan;
+    padding: 12px;
 }
 
 select {
@@ -108,15 +106,14 @@ select, input[type="submit"] {
 }
 
 .form-wrapper {
-    width: 76%;
+    width: 86%;
     background-color: #f0f8ff21; /* temp styling to see layout */ 
     border-radius: 4px 47px 4px 47px; /* may need adjustment on larger screens */
 }
 
 .movie-pic-small {
-    width: 99%;
-    height: 181px;
-    object-fit: cover;
+    height: 291px;
+    object-fit: scale-down;
     border-radius: 7px;
 }
 
@@ -124,7 +121,7 @@ select, input[type="submit"] {
     border-radius: 4px;
     background-color: #f0f8ff21;
     padding: 3%;
-    width: 48%;
+    width: 98%;
     margin: 3px;
     max-height: max-content;
 }
@@ -139,5 +136,56 @@ select, input[type="submit"] {
     font-size: 1.3rem;
 }
 
+.film-description {
+    font-family: monospace;
+    width: 87%;
+}
 
-/* see through greey background color */
+.film-description, .rating-text {
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 415px) {
+    .single-film-wrapper {
+        width: 48%;
+    }
+    h2 {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    h2 {
+        padding-left: 70px;
+        font-size: 2.3rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    .form-wrapper {
+        width: 63%;
+        border-radius: 21px 101px 4px 101px;
+    }
+    .film-description {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    html {
+        font-size: 16px;
+    }
+
+    h2 {
+        padding-left: 100px;
+    }
+
+    .single-film-wrapper {
+        width: 32%;
+    }
+
+}
+
+/* see through grey background color */
